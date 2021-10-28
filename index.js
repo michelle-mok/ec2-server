@@ -9,7 +9,7 @@ const whenIncomingRequest = (request, response) => {
   var filePath = '.' + request.url;
 
   readFile(filePath, (error, content) => {
-    response.writeHead(200, { 'Content-Type': 'text/html' });
+    response.writeHead(200, { 'Content-Type': 'text/css' });
     response.end(content, 'utf-8');
   });
 };
