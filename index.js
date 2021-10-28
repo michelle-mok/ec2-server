@@ -8,6 +8,7 @@ const whenIncomingRequest = (request, response) => {
 
   var filePath = '.' + request.url;
 
+  var extname = String(path.extname(filePath)).toLowerCase();
   var mimeTypes = {
         '.html': 'text/html',
         '.js': 'text/javascript',
